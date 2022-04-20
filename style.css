@@ -1,0 +1,79 @@
+
+
+
+body{
+    
+    background-color: #0D1321 ;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1, h2{
+    color: #F0EBD8;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+
+.home-section{
+    text-align: center;
+    width: auto;
+    height: 400px;
+}
+
+.menu{
+    color: #F0EBD8;  
+}
+
+ul{
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+li{
+    position: relative;
+    margin-right: 10px;
+}
+
+.about-section{
+    width: auto;
+    height: 400px;
+    background-color: #1D2D44;
+    border: none;
+}
+
+.about-section > h2{
+    padding-top: 20px;
+}
+
+.contact-section{
+    width: auto;
+    height: 400px;
+    background-color: #3E5C76;
+    border: 0px;
+}
+
+.contact-section > h2{
+    padding-top: 20px;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #5D737E;        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #3F4045;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid #3F4045;  /* creates padding around scroll thumb */
+  }
+
+  /* ::-webkit-scrollbar {
+    display: none;
+} */
