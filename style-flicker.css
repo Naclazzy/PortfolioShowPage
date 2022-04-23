@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 body{
     transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 50px 0 10px;
+}
+
+p{
+    margin: 0px;
+    font-size: 20px;
+}
+
+a{
+    color: rgb(192, 0 , 255);
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    border: 1px solid rgb(192, 0 , 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.dark a{
+    color: rgb(197, 25, 255);
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px ;
+    
 }
 
 .switch{
@@ -15,7 +60,7 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: #E5E5E5;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -25,9 +70,14 @@ body{
 }  
 
 .dark{
-    background-color: rgb(57, 57, 57);
+    background-color: #14213D;
     transition: 0.3s;
 }
+
+.dark > *{
+    color: white;
+}
+
 .sun{
     width: 30px;
     height: 30px;
@@ -46,4 +96,57 @@ body{
 .dark .flicker{
     transform: translateX(40px);
     transition: 0.3s;
+}
+
+.main{
+    height: 80vh;
+}
+
+.main-text{
+    width: 50%;
+    padding: 30px;
+}
+
+.square{
+    width: 98%;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    margin: 1%;
+}
+
+.dark .square{
+    background-color: grey;
+}
+
+#img{
+    background-image: url("assets/news-app.png");
+    background-size: cover;
+}
+
+.sub-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(136, 136, 136);
+}
+
+.dark footer{
+    background-color:rgb(35, 35, 35) ;
+}
+
+@media only screen and (min-width: 970px){
+    .square{
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+    .square:hover {
+    transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 }
