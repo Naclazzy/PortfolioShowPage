@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,62 @@
     <link rel="stylesheet" href="style-flicker.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-        </style>
-        
+    </style>
+
     <title>Portfolio</title>
 </head>
-<body>    
+
+<body>
     <header>
         <div class="switch">
-                <div class="flicker"></div>
-                <div class="sun"><img src="assets\icons8-sun.svg" alt=""></div>
-                <div class="moon"> <img src="assets\moon-svgrepo-com.svg" alt=""></div>
+            <div class="flicker"></div>
+            <div class="sun"><img src="assets\icons8-sun.svg" alt=""></div>
+            <div class="moon"> <img src="assets\moon-svgrepo-com.svg" alt=""></div>
         </div>
     </header>
-<div class="home-section">
-    <nav class="menu">
-    <ul>
-        <li><a href="#"> Home</a></li>
-        <li><a href="#"> About Me</a></li>
-        <li><a href="#"> Contact Me</a></li>
-    </ul>
-</nav>
-    <h1>My Portfolio Website</h1>
-</div>
-<div class="about-section">
-    <h2>About Me</h2>
+    <section class="main">
+        <div class="main-text">
+            <h1>Jan Wegmann</h1>
+            <p>Welcome to my Page!</p>
+            <br />
+            <p>I am a Webdeveloper and UI/UX Designer.</p>
+            <br />
+            <a href="#footer">Contact me</a>
+        </div>
+    </section>
 
-</div>
+    <section class="sub-section">
+            <div class="square" id="img">
+                <h2>Payment Dashboard</h2>
+                <p>A B2B Payment Tracker</p>
+                <br/>
+                <a href="#">Check it out ></a>
+            </div>
+            <div class="square" id="img">
+                <h2>Burger App</h2>
+                <p>App for rating Burgers</p>
+                <br/>
+                <a href="#">Check it out ></a>
+            </div>
+            <div class="square" id="img">
+                <h2>News App</h2>
+                <p>An App to Track News</p>
+                <br/>
+                <a href="#">Check it out ></a>
+            </div>
+            <div class="square" id="img">
+                <h2>Dating App</h2>
+                <p>App for Dates</p>
+                <br/>
+                <a href="#">Check it out ></a>
+            </div>
+    </section>
 
-<div class="contact-section">
-    <h2>Contact Me</h2>
-    <div class="contact-form">
-    <form action="submit" id="contact">
-        <input type="text">
-        <input type="submit">
-    </form>
-    </div>
-</div>
-<script src="app.js"></script>
+    <footer id="footer">
+        <p>jan@janwegmann.com</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
